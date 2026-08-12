@@ -1,0 +1,4 @@
+title: OpenSimulator Manual
+description: A manual for OpenSimulator residents, grid/sim admins, and developers.
+theme: jekyll-theme-cayman
+markdown: kramdown

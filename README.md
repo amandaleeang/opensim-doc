@@ -1,7 +1,8 @@
 # OpenSim Docs
 
-[OpenSim Users/Residents](users.md)
+This repository holds the OpenSimulator manual, published with GitHub Pages.
 
-[Grid and Sim Admins](admins.md)
-
-[OpenSim Developers](developers.md)
+- [Start here (home / choose a path)](index.md)
+- [User / Resident guide](users/index.md)
+- [Grid & Sim Admin guide](admins/index.md)
+- [Developer guide](developers/index.md)
