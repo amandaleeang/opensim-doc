@@ -24,6 +24,8 @@ Both are built from many small `.csproj` projects (one per folder), orchestrated
    how services vs connectors work.
 2. [Where to look](where-to-look.md) – a "I want to change X → start here" index.
 3. [Data flow](data-flow.md) – walkthroughs of login and region teleport/crossing.
+4. [Region module events](region-module-events.md) – lifecycle methods and the
+   `EventManager` / `IClientAPI` events an optional module can hook.
 
 ## Before you dig in
 

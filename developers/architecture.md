@@ -56,6 +56,11 @@ in `Region/Framework/Interfaces/`:
   shared by all scenes.**
 - `INonSharedRegionModule` – `: IRegionModuleBase`. **One new instance per scene.**
 
+The methods on those interfaces (`Initialise`, `AddRegion`, `RegionLoaded`, …) are
+the module lifecycle. After `AddRegion`, a module typically subscribes to
+`scene.EventManager` (and later to `IClientAPI` events on each new client). Full
+catalogue: [Region module events](region-module-events.md).
+
 ### Loading & registration
 
 `ApplicationPlugins/RegionModulesController/RegionModulesControllerPlugin.cs`
@@ -158,7 +163,8 @@ each region → `OpenSimBase.CreateRegion()` → `Scene` →
 - `Region/ScriptEngine/` – in-world scripting: `YEngine/` (the LSL/XMR engine),
   `Shared/` (LSL types/API base classes), `Interfaces/`.
 - `Region/OptionalModules/` – optional/experimental modules (AutoBackup, NPC, money,
-  voice, IRC, …). See [Admin – AutoBackup](../admins/console-backup.md).
+  voice, IRC, …). See [Admin – AutoBackup](../admins/console-backup.md) and
+  [Region module events](region-module-events.md) for writing your own.
 - `Data/` – database providers: `SQLite`, `MySQL`, `PGSQL`, `Null`.
 - `Addons/` – separate add-on modules (e.g. Groups, OfflineIM, WebRTC voice).
 - `Tools/` – utilities (`pCampBot` load tester, `Configger`, `LaunchSLClient`).

@@ -25,6 +25,9 @@ A quick index for "I want to change **X** → start in file **Y**". All paths ar
 | OAR / IAR import-export | `Region/CoreModules/World/Archiver/` |
 | Asset cache (Flotsam) | `Region/CoreModules/Asset/FlotsamAssetCache.cs`; `config-include/FlotsamCache.ini` |
 | Adding / editing a region module | Define interface in `Region/Framework/Interfaces/`, implement in `Region/CoreModules/` following `IRegionModuleBase` |
+| Writing an **optional** region module | `Region/OptionalModules/` (examples in `Example/BareBones*`); hook `scene.EventManager` — see [Region module events](region-module-events.md) |
+| Scene events a module can subscribe to | `Region/Framework/Scenes/EventManager.cs` |
+| Per-client (viewer packet) events | `Framework/IClientAPI.cs`; subscribe from `EventManager.OnNewClient` |
 | The Robust server itself | `Server/ServerMain.cs`, `Server/Base/`, `Server/Handlers/` |
 | Database layer / a new store | `Data/` (`SQLite`, `MySQL`, `PGSQL`, `Null`) + `Data/Base` |
 | The console / commands | `Framework/MainConsole.cs`, `Framework/ICommandConsole.cs`; commands registered via `ICommandConsole` |
