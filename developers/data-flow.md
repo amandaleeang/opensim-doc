@@ -61,4 +61,6 @@ The simulator side of "an agent arrived" is a **child or root agent** represente
 
 Both flows show the same design: shared logic lives in `Services/*Service`, remote
 access is a `Connectors/*` proxy, and region-side behaviour is a `CoreModules` region
-module. See [Where to look](where-to-look.md) to jump straight to the code.
+module. See [Where to look](where-to-look.md) to jump straight to the code, and
+[Protocols](protocols.md) for the HTTP bodies those connectors send and receive
+(local grid and Hypergrid).

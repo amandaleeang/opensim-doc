@@ -123,6 +123,9 @@ On Robust, the matching HTTP endpoint is exposed by an *in-connector*, e.g.
 `Server/Handlers/Simulation/SimulationServiceInConnector.cs` and
 `Server/Handlers/Login/LLLoginServiceInConnector.cs`.
 
+The HTTP methods, paths, and example request/response bodies (local grid and
+Hypergrid) are documented in [Protocols](protocols.md).
+
 ## Application plugins (bootstrap)
 
 Implement `IApplicationPlugin` (`Region/Application/IApplicationPlugin.cs`), discovered

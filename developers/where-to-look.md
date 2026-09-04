@@ -17,6 +17,7 @@ A quick index for "I want to change **X** → start in file **Y**". All paths ar
 | Permissions | `Region/Framework/Scenes/Scene.Permissions.cs` |
 | A grid service (asset/grid/inventory/…) | `Services/<Name>Service/` + its contract in `Services/Interfaces/I<Name>Service.cs` |
 | Talking to a remote service | `Services/Connectors/` |
+| **Wire messages** (sim ↔ sim, sim ↔ Robust, HG) | [Protocols](protocols.md) – request/response bodies, not the C# |
 | Login | `Services/LLLoginService/LLLoginService.cs`; HTTP entry in `Server/Handlers/Login/` |
 | Teleport / region crossing | `Region/CoreModules/Framework/EntityTransfer/EntityTransferModule.cs` |
 | Hypergrid travel | `Services/HypergridService/`, `Region/CoreModules/Framework/EntityTransfer/HGEntityTransferModule.cs` |
